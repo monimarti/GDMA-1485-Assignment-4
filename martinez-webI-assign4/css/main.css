@@ -40,10 +40,7 @@
 /*--------------------------------------------------------------
 3.0 - Generic 
 -------------------------------------------------------------- */
-html{
-	font-size: 1.25rem;
-	font-family: 'Merriweather', serif;
-}
+
 
 
 
@@ -53,30 +50,6 @@ html{
 
 /*  TYPOGRAPHY  */
 
-h1 {
-	font-size: 2.75rem;
-	line-height: 1.25em;
-	margin-top: 2em;
-	margin-bottom: 1em;
-}
-
-h2 {
-	font-size: 1.25rem;
-	margin: .5em 0;
-}
-
-p, li {
-	font-size: 1rem;
-	line-height: 1.75em;
-	margin-top: .5em;
-	margin-bottom: 1.25em;
-}
-
-li {
-	font-style: italic;
-	font-size: .75em;
-	list-style-type: square;
-}
 
 /*--------------------------------------------------------------
 5.0 - Objects 
@@ -85,76 +58,24 @@ li {
 
 
 
-@media screen and (min-width: 768px){
-	
-	.wrapper {
-		width: 75%;
-	}
-	
-	html {
-		font-size: 1rem;
-	}
-	
-	h1 {
-		font-size: 3rem;
-	}
-	
-	h2 {
-		font-size: 2rem;
-		margin: .75em 0;
-	}
-	
-	p {
-		line-height: 2em;
-	}
-	
-	
-	
-	
-}
 
-@media screen and (min-width: 1024px){
-	
-	.wrapper {
-		width: 50%;
-	}
-	
-	
-	
-	h1 {
-		font-size: 3.5rem;
-	}
-	
-	h2 {
-		font-size: 2rem;
-		margin: 1em 0;
-	}
-	
-	
-	img {
-		float: right;
-		
-	}
-	
-
-}
 
 /*--------------------------------------------------------------
 6.0 - Componets 
 -------------------------------------------------------------- */
  
-.img-responsive {
-	max-width: 100%;
-}
 
-.row {
-	overflow: auto;
-}
 
 
 /*--------------------------------------------------------------
 7.0 - Utilities 
 -------------------------------------------------------------- */
  
+@media screen and (min-width: 760px) {
+	.center-block-md {
+		float: none;
+		margin: 0 auto;
+	}
+}
 
 
