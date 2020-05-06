@@ -68,6 +68,15 @@
 	text-align: center;
 }
 
+#top-bar {
+	display: none;
+}
+
+/*  NAVIGATION  */
+
+nav li, li {
+	display: inline-block;
+}
 
 /*--------------------------------------------------------------
 7.0 - Utilities 
@@ -77,6 +86,12 @@
 	.center-block-md {
 		float: none;
 		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	#top-bar {
+		display: inline-block;
 	}
 }
 
