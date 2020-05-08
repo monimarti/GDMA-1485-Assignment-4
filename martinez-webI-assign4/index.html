@@ -2,9 +2,11 @@
 <html>
 <head>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/normalize.css" >
 <link rel="stylesheet" type="text/css" href="css/framework.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<script src="https://kit.fontawesome.com/b541b67be8.js" crossorigin="anonymous"></script>
 	
 <meta name="viewport" content="width=device-width, initial-scale=1">
 																	
@@ -16,17 +18,20 @@
 <body>
 	
 	<header>
-		<div class="wrapper row">
-			<div id="top-bar">
-				<ul>
+		<div id="top-bar" class="animate-hover">
+	  		<div class= "wrapper row">
+				<ul class="col-lg-6 ">
 					<li><a href="#">65/A, 17th floor, Kingsland, New York</a></li>
 					<li><a href="#">info@consulting.com</a></li>
-					<li><a href="#">linkdin</a></li>
-					<li><a href="#">twitter</a></li>
-					<li><a href="#">facebook</a></li>
-					<li><a href="#">google</a></li>
 				</ul>
+				<div class="col-lg-6">
+					<i class="fab fa-facebook"><a href="http://www.facebook.com" target="_blank"><span>facebook</span></a></i>	
+					<i class="fab fa-twitter"><a href="http://www.twitter.com" target="_blank"><span>twitter.com</span></a></i>
+					<i class="fab fa-tumblr-square"><a href="http://www.flikr.com" target="_blank"><span>tumblr.com</span></a></i>
+				</div>
 			</div>
+		</div>
+		<div class="wrapper row" id="header-center">
 			<div class="col-sm-12 col-md-2">
 				<h1>Buson.</h1>
 			</div>
@@ -41,16 +46,18 @@
 				</ul>
 			</nav>
 			<div class="col-sm-12 col-md-2">
-				<p><a href="#">contact now</a></p>
+				<p><a href="#" class="bttn-pink">contact now</a></p>
 			</div>
 		</div>
 	
 	<!------------------------------------------------------------>
-		<div id="hero">
+		<div id="bg-hero">
 			<div class="wrapper">
-				<p>Welcome to Buson</p>
-				<p>We help you to grow your business</p>
-				<p><a href="#">learn more</a></p>
+				<div class="col-sm-12 col-md-9 col-lg-6">
+					<p>welcome to buson</p>
+					<p>we help you to grow your business</p>
+					<p><a href="#" class="bttn-pink">learn more</a></p>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -59,74 +66,74 @@
 	<section id="about">
 		<div class="wrapper row">
 			<section class="col-sm-12 col-md-6 col-lg-4">
-				<!--<img>-->
+				<img src="img/girl-phone.jpg" alt="" class="img-responsive">
 				<header>
 					<h2>Business Planning</h2>
 				</header>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</section>
 			<section class="col-sm-12 col-md-6 col-lg-4">
-				<!--<img>-->
+				<img src="img/hands-circle.jpg" alt="" class="img-responsive">
 				<header>
-					<h2>Business Planning</h2>
+					<h2>Financial Projections</h2>
 				</header>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</section>
-			<section class="col-sm-12 col-lg-4">
+			<section class="col-sm-12 col-md-12 col-lg-4" >
 				<header>
 					<h2>What we do for you</h2>
 				</header>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
 			</section>
 		</div>
-	
+	</section>
 		<!------------------------------------------------------------>
 			<div class="wrapper row"> 
 				<section>
 					<div class="col-lg-6">
-						<!--<img>-->
+						<img src="img/man-glad.jpg" alt="" class="img-responsive">
 					</div>
 					<div class="col-lg-6">
 						<header>
 							<h2>We are more trusted than 5,000 clients</h2>
 						</header>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-						<p><a href="#">learn more</a></p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcor</p>
+						<p><a href="#" class="bttn-pink">learn more</a></p>
 					</div>
 				</section>
 			</div>
-		</section>
+		
 		<!------------------------------------------------------------>
 		<section id="services">
 			<div class="wrapper">
 					<div class="row">
-						<header class="col-sm-12 col-md-3 center-block-md"><!-- I am not sure if this center-block-md class is working correctly? -->
+						<header class="col-sm-12 col-md-6 center-block-md"><!-- I am not sure if this center-block-md class is working correctly? -->
 							<h2>Our Services</h2>
 						</header>
 					</div>
-					<section class="col-sm-12 col-md-6 col-lg-4"><!-- bg color? -->
-						<!--<img> icon -->
+					<section class="col-sm-12 col-md-6 col-lg-4 bg-blue-box"><!-- bg color? -->
+						<img src="img/lama-strat-plan.png" alt="" data-rjs="2">
 						<header>
 							<h3>Strategic Planning</h3>
 						</header>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</section>
-					<section class="col-sm-12 col-md-6 col-lg-4"><!-- bg color? -->
-						<!--<img> icon -->
+					<section class="col-sm-12 col-md-6 col-lg-4 bg-blue-box"><!-- bg color? -->
+						<img src="img/sandwich-trades-stocks.png" alt="" data-rjs="2">
 						<header>
 							<h3>Trades &amp; Stocks</h3>
 						</header>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</section>
-					<section class="col-sm-12 col-md-12 col-lg-4"><!-- bg color? -->
-						<!--<img> icon -->
+					<section class="col-sm-12 col-md-6 col-lg-4 bg-blue-box"><!-- bg color? -->
+						<img src="img/dino-audit.png" alt="" data-rjs="2">
 						<header>
 							<h3>Audit &amp; Assurance</h3>
 						</header>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</section>
 					<div class="col-sm-12">
-						<p><a href="#">More Services</a></p>
+						<p><a href="#" class="bttn-pink-reverse">More Services</a></p>
 					</div>
 			</div>
 		</section>
@@ -138,10 +145,10 @@
 						<h2>Completed Cases</h2>
 					</header>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-					<p><a href="#">See More</a></p>
+					<p><a href="#" class="bttn-pink-reverse">See More</a></p>
 				</div>
-				<div class="col-md-4 col-lg-4">
-					<!--<img>-->
+				<div class="col-md-4 col-lg-3">
+					<img src="img/man-in-suit.jpg" alt="" class="img-responsive">
 				</div>
 			</div>
 		</section>
@@ -149,17 +156,19 @@
 		<section id="review">
 			<div class="wrapper">
 				<div class="row">
-					<!--<img> avatar -->
-					<p>You can't succeed if you just do what others do and follow the well-worn path. You need to create a new and original path for yourself.</p>
-					<!-- <img> stars  -->
-					<p>Clifford Frazier - Colorlib Themes</p>
+					<div class="col-sm-9 col-lg-12">
+						<img src="img/man-circle.png" alt="" class="img-responsive" width="250">
+						<p>You can't succeed if you just do what others do and follow the well-worn path. You need to create a new and original path for yourself.</p>
+						<!-- <img> stars  -->
+						<p>Clifford Frazier - Colorlib Themes</p>
+					</div>
 				</div>
 			</div>
 		</section>
 	
 	<!------------------------------------------------------------>
 	
-	<section class="wrapper">
+	<section class="wrapper" id="news">
 		<!-- I don't really understand when to add the row class to the wrapper class and not have them in seperate divs -->
 		<div class="row">
 			<section class="col-sm-12">
@@ -167,7 +176,7 @@
 					<h2>Our Recent News</h2>
 				</header>
 					<section class="col-sm-12 col-md-6 col-lg-4">
-						<!-- img -->
+						<img src="img/bookshelf.jpg" alt="" class="img-responsive">
 						<p>Business Planning</p>
 						<header>
 							<h3>Amazing places to visit in the summer</h3>
@@ -175,15 +184,15 @@
 						<p>Nov 30, 2020</p>
 					</section>
 					<section class="col-sm-12 col-md-6 col-lg-4">
-						<!-- img -->
+						<img src="img/men-laptops.jpg" alt="" class="img-responsive">
 						<p>Audit</p>
 						<header>
 							<h3>Amazing places to visit in the summer</h3>
 						</header>
 						<p>Nov 30, 2020</p>
 					</section>
-					<section class="col-sm-12 col-lg-4">
-						<!-- img -->
+					<section class="col-sm-12 col-md-6 col-lg-4">
+						<img src="img/women-walking.jpg" alt="" class="img-responsive">
 						<p>Business Planning</p>
 						<header>
 							<h3>Amazing places to visit in the summer</h3>
@@ -199,9 +208,15 @@
 	<footer>
 		<div class="wrapper row">
 			<div class="col-sm-12 col-md-6 col-lg-3">
-				<p>Busion.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-				<p>*icons*</p>
+				<div id="footer-header">
+					<p>Busion.</p>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+				<div class="col-sm-6 col-md-8 col-lg-12">
+					<i class="fab fa-facebook"><a href="http://www.facebook.com" target="_blank"><span>facebook</span></a></i>	
+					<i class="fab fa-twitter"><a href="http://www.twitter.com" target="_blank"><span>twitter.com</span></a></i>
+					<i class="fab fa-tumblr-square"><a href="http://www.flikr.com" target="_blank"><span>tumblr.com</span></a></i>
+				</div>
 			</div>
 			<div class="col-sm-6 col-lg-3">
 				<p>Company</p>
@@ -227,7 +242,7 @@
 					</ul>
 				</nav>
 			</div>
-			<div class="col-sm-12 col-md-6 col-lg-3">
+			<div class="col-sm-12 col-lg-3">
 				<p>Get in touch</p>
 				<nav>
 					<ul>
@@ -242,5 +257,44 @@
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/retina.js"></script>
+	
+	<script>
+			// Select all links with hashes
+	$('a[href*="#"]')
+	  // Remove links that don't actually link to anything
+	  .not('[href="#"]')
+	  .not('[href="#0"]')
+	  .click(function(event) {
+		// On-page links
+		if (
+		  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+		  && 
+		  location.hostname == this.hostname
+		) {
+		  // Figure out element to scroll to
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		  // Does a scroll target exist?
+		  if (target.length) {
+			// Only prevent default if animation is actually gonna happen
+			event.preventDefault();
+			$('html, body').animate({
+			  scrollTop: target.offset().top
+			}, 1000, function() {
+			  // Callback after animation
+			  // Must change focus!
+			  var $target = $(target);
+			  $target.focus();
+			  if ($target.is(":focus")) { // Checking if the target was focused
+				return false;
+			  } else {
+				$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+				$target.focus(); // Set focus again
+			  };
+			});
+		  }
+		}
+	  });
+	</script>
 </body>
 </html>

@@ -41,8 +41,29 @@
 3.0 - Generic 
 -------------------------------------------------------------- */
 
+* {
+	font-family: 'Roboto', sans-serif;
+}
 
+*:focus {
+    outline: none;
+}
 
+html {
+	font-size: 1rem;
+}
+
+@media screen and (min-width: 768px){
+	html{
+		font-size: 1.25rem;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	html{
+		font-size: 1.1rem;
+	}
+}
 
 /*--------------------------------------------------------------
 4.0 - Elements 
@@ -50,6 +71,67 @@
 
 /*  TYPOGRAPHY  */
 
+h1 {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+
+/*  HEADLINES  */
+
+h1 {
+	font-size: 3rem;
+	color: #002c5b;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+}
+
+
+/*  NAVIGATION  */
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+ a:hover {
+	color: #000;
+}
+
+
+nav ul { 
+	padding:0;
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+/*  BODY  */
+
+p {
+	line-height: 1.5em;
+}
+
+@media screen and (min-width: 768px){
+	h1{
+		text-align:left;
+	}
+	nav {
+		text-align: right;
+		margin-top: 2.25em;
+	}
+	
+	
+}
 
 /*--------------------------------------------------------------
 5.0 - Objects 
@@ -64,23 +146,172 @@
 6.0 - Componets 
 -------------------------------------------------------------- */
  
-#services, #review {
+/*  HEADER  */
+
+header div:nth-child(2) nav a{
+	font-variant: small-caps;
+	margin-right: 10px;
+	line-height: .25em;
+	
+}
+
+#bg-hero p:first-child {
+	font-variant: small-caps;
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+}
+
+#bg-hero p:nth-child(2)  {
+	font-variant: small-caps;
+	font-weight: 900;
+	font-size: 3rem;
+	margin-bottom: 1em;
+	line-height: 1em;
+}
+ 
+
+
+header div.col-sm-12 h1 { /* taking margin bottom space out*/
+	margin-bottom: 0;
+}
+
+
+/*  BODY  */
+
+
+#services, #review, #header-center {
 	text-align: center;
 }
 
+
+
+#about, #services > section {
+	padding: 50px 0;
+}
+
+#about, footer {
+	background-color: #f6f9fe;
+}
+
+#about section:last-child {
+	background-color: #fff;
+	border: solid #ff7e69;
+	background-clip: padding-box;
+}
+
+.bg-blue-box {
+	background-color: #f6f9fe;
+	padding: 20px;
+}
+
+#services p {
+	padding: 20px;
+}
+
+
+#news section > p:last-child {
+	font-size: .75em;
+}
+
+
+#news section > p:last-child {
+	color: #858b98;	
+}
+
+/*  HIDDEN-NAVIGATION  */
+
 #top-bar {
+	display: none;
+	background-color: #002c5b;
+	width: 100%;
+}
+
+#top-bar a {
+	color: white;
+}
+
+#top-bar a:first-child {
+	margin-right: 20px;
+}
+
+
+ 
+span {
 	display: none;
 }
 
-/*  NAVIGATION  */
-
-nav li, li {
-	display: inline-block;
+i {
+	color: white;
+	float: right;
+	margin-top: 20px;
 }
+
+
+/*  FOOTER  */
+
+footer ul li {
+	
+	display: block;
+}
+
+footer a, footer i {
+	color: #858b98;
+}
+
+footer i {
+	margin: 0 20px;
+}
+
+#footer-header {
+	font-size: 3rem;
+	font-weight: 900;
+	
+}
+
+@media screen and (min-width: 1024px){
+	footer nav ul li {
+		float: left;
+		display: block;
+	}
+	
+	footer {
+		padding: 50px 0;
+	}
+}
+
+/*  BUTTON  */
+
+
+.bttn-pink, .bttn-pink-reverse {
+	border-radius: 10px;
+	padding: 10px 40px;
+	color: #fff;
+}
+
+.bttn-pink-reverse {
+	border: solid #ff7e69;
+	background-color: #fff;
+}
+
+.bttn-pink {
+	background-color: #ff7e69;
+}
+
 
 /*--------------------------------------------------------------
 7.0 - Utilities 
 -------------------------------------------------------------- */
+
+/*  COLOR  */
+
+i:hover, #top-bar a:hover, #news p, #header-center nav a:hover, #bg-hero p:first-child, .bttn-pink-reverse {
+	color: #ff7e69;
+}
+
+header, #footer-header, #bg-hero p:nth-child(2), header div:nth-child(2) nav a {
+	color: #181d33;
+}
+/*  MEDIA  */
  
 @media screen and (min-width: 768px){
 	.center-block-md {
@@ -93,6 +324,33 @@ nav li, li {
 	#top-bar {
 		display: inline-block;
 	}
+}
+
+@media screen and (min-width: 1024px){
+	#bg-hero {
+	background: url("../img/hero-image-women.jpg") no-repeat center;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	height: 600px;
+	padding: 100px 0;
+	}
+}
+
+.animate-hover {
+   width: 100%;
+  height: 100%;
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #ff7e69;
+  }
+  100% {
+    background-color: #181d33;
+  }
 }
 
 
